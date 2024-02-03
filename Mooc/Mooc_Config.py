@@ -11,9 +11,11 @@ import re
 __QQgroup__ = "949378798"
 __email__  = "949378798@qq.com "
 if hasattr(sys, 'frozen'):
-    PATH = os.path.dirname(sys.executable)
+    # PATH = os.path.dirname(sys.executable)
+    PATH = r'D:\Desktop'
 else:
-    PATH = os.path.dirname(os.path.abspath(__file__))  # 程序当前路径
+    # PATH = os.path.dirname(os.path.abspath(__file__))  # 程序当前路径
+    PATH = r'D:\Desktop'
 winre = re.compile(r'[?*|<>:"/\\\s]')  # windoes 文件非法字符匹配
 WIN_LENGTH = 64
 TIMEOUT = 60   # 请求超时时间
